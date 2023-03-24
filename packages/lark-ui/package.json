@@ -1,0 +1,39 @@
+{
+  "name": "lark-ui",
+  "version": "1.0.0",
+  "description": "React ui components with tailwindcss.",
+  "keywords": [
+    "react",
+    "ui",
+    "tailwindcss"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && tsc -p ./",
+    "prepack": "npm run build"
+  },
+  "bugs": {
+    "url": "https://github.com/662/lark-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/662/lark-ui",
+    "directory": "packages/lark-ui"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.sisyphe.tech/repository/npm-hosted/"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "react": "^18.2.0",
+    "rimraf": "^4.4.0"
+  },
+  "peerDependencies": {
+    "react": ">= 18"
+  }
+}

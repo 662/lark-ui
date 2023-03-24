@@ -1,0 +1,30 @@
+{
+  "name": "lark-ui",
+  "description": "React ui components with tailwindcss.",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "start": "npm run start -w doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/662/lark-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/662/lark-ui/issues"
+  },
+  "homepage": "https://github.com/662/lark-ui#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.5"
+  }
+}
